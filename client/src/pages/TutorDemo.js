@@ -15,7 +15,9 @@ export default function TutorDemo() {
     
   return (
     <div>
-      <select value={subject} onChange={(e) => { setSubject(e.target.value) }}>
+      <select value={subject} onChange={(e) => {
+        console.log(e.target.value)
+        setSubject(e.target.value) }}>
         <option value="none">Please select a Subject</option>
         <option value="javascript">JavaScript</option>
         <option value="css">CSS</option>
@@ -37,6 +39,41 @@ export default function TutorDemo() {
 }
 
 
+// Hero Image **************************************************************************
+// const Hero = (props) => {
+//   const width = window.innerWidth;
+//   const height = window.innerHeight;
+  
+//   const style = {
+//     'position': 'fixed',
+//     'top': 0, 
+//     'left': 0,
+//     'min-width': '100%',
+//     'min-height': '100%'
+//   }
+  
+//   return(
+//     <div style={style}>
+//       <img src={`https://unsplash.it/${width}/${height}?image=${props.number}`} style={style}/>
+//     </div>
+//   )
+// }
+
+// const App = () => {
+//   return(
+//     <div>
+//       <Hero name='hero' number={1054} />
+//     </div>
+//   )
+// }
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('app')
+// );
+
+
+// Card with button ***********************************************************
 // {/* <Card style={{ width: '18rem' }}>
 //   <Card.Img variant="top" src="holder.js/100px180" />
 //   <Card.Body>
