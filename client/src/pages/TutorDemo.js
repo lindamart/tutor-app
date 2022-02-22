@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import TutorCard from '../components/TutorCard'
 // import Card from 'react-bootstrap/Card'
 
 export default function TutorDemo() {
@@ -26,9 +27,11 @@ export default function TutorDemo() {
         <option value="sql">SQL</option>
         <option value="react">React</option>
       </select>
-      <div>
-        {tutors.map((tutor) => {
-          return <div>{tutor.name}</div>
+      <div className='tutorList'>
+        {tutors.filter((tutor) => {
+          return tutor.subject === subject
+        }).map((tutor) => {
+          return <TutorCard tutor={tutor}/>
           
         })}
       </div>
