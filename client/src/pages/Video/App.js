@@ -5,7 +5,7 @@ import SearchBar from "./Video";
 function App(){
     return (
         <div className="App">
-            {/* <SearchBar placeholder="What would you like to search" data=(VideoData)/> */}
+            <SearchBar placeholder="What would you like to search" />
         </div>
     );
 }
