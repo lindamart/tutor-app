@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import SingleThought from './pages/SingleThought';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Video from './components/Video';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
