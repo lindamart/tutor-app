@@ -1,3 +1,15 @@
+// import React from 'react';
+
+
+// <header id="heroImage">
+// {/* https://www.google.com/imgres?imgurl=https%3A%2F%2Fblog.nsslha.org%2Fwp-content%2Fuploads%2F2019%2F06%2FPaporto_Tutoring-1060x707.jpg&imgrefurl=https%3A%2F%2Fblog.nsslha.org%2F2019%2F06%2F18%2Fsmart-people-dont-need-tutoring-right-wrong%2F&tbnid=B-iYGDrVYB_EOM&vet=12ahUKEwipr7PMwZb2AhVZsXIEHegVBhUQMygMegUIARDqAQ..i&docid=omJ7tPhbg8SjSM&w=1060&h=707&q=tutoring&ved=2ahUKEwipr7PMwZb2AhVZsXIEHegVBhUQMygMegUIARDqAQ */}
+// <div className='heroImageText'>
+//     Welcome!
+// </div>
+
+    
+// </header>
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +21,6 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <div>
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
@@ -39,9 +50,6 @@ const Header = () => {
         </div>
       </div>
     </header>
-      <div id="heroImage">
-</div>
-  </div>
   );
 };
 

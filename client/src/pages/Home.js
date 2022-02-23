@@ -12,24 +12,30 @@ const Home = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
-        >
-          <ThoughtForm />
+      <div className="marquee-outer">
+      <div className="marquee-inner">
+        <p>Hi!</p>
+        <img src="//www.html.am/images/html-codes/marquees/fish-swimming.gif" width="94" height="88" alt="Swimming fish"/></div>
         </div>
-        <div className="col-12 col-md-8 mb-3">
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <ThoughtList
-              thoughts={thoughts}
-              title="Some Feed for Thought(s)..."
-            />
-          )}
+        
+        <div className="flex-row justify-center">
+          <div
+            className="col-12 col-md-10 mb-3 p-3"
+            style={{ border: '1px dotted #1a1a1a' }}
+          >
+            <ThoughtForm />
+          </div>
+          <div className="col-12 col-md-8 mb-3">
+            {loading ? (
+              <div>Loading...</div>
+            ) : (
+              <ThoughtList
+                thoughts={thoughts}
+                title="Some Feed for Thought(s)..."
+              />
+            )}
+          </div>
         </div>
-      </div>
     </main>
   );
 };

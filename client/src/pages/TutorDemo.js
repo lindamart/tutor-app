@@ -15,6 +15,22 @@ export default function TutorDemo() {
     
   return (
     <div>
+       <div className="marquee-outer">
+      <div className="marquee-inner">
+        <p>School is Cool!</p>
+        <img src="//www.html.am/images/html-codes/marquees/fish-swimming.gif" width="94" height="88" alt="Swimming fish"/>
+      </div>
+        </div>
+        <div className="marquee-outer">
+      <div className="marquee-inner-2">
+        <p>Find your tutor!</p>
+        <img src="//www.html.am/images/html-codes/marquees/fish-swimming.gif" width="94" height="88" alt="Swimming fish"/>
+      </div>
+      <div className="marquee-inner-3">
+        <p>Today is a good day!</p>
+        <img src="//www.html.am/images/html-codes/marquees/fish-swimming.gif" width="94" height="88" alt="Swimming fish"/>
+      </div>
+        </div>
       <select value={subject} onChange={(e) => { setSubject(e.target.value) }}>
         <option value="none">Please select a Subject</option>
         <option value="javascript">JavaScript</option>

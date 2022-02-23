@@ -19,7 +19,37 @@ html {
  */
 body {
   margin: 0;
+  padding: 0;
 }
+
+#heroImage {
+  width: 150vw;
+  height: 70vh;
+  background-image: url("https://blog.nsslha.org/wp-content/uploads/2019/06/Paporto_Tutoring-1060x707.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  margin: 0 auto;
+}
+
+/* #heroImage2 {
+  width: 150vw;
+  height: 70vh;
+  background-image: url("https://static.codingame.com/assets/video_poster_02.49cfbe89.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  margin: 0 auto;
+} */
+
+/* #heroImage3 {
+  width: 150vw;
+  height: 70vh;
+  background-image: url("https://static.codingame.com/assets/video_poster_02.49cfbe89.jpg");
+  background-repeat: no-repeat;
+  background-size: fill;
+  margin: 0 auto;
+} */
+
+
 
 /**
  * Render the `main` element consistently in IE.

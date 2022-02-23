@@ -1,3 +1,12 @@
+// import React from 'react';
+
+// <header>
+// {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdeuszXkQyOVrYQOkARmDd7Mh1XYV6ALMfuw&usqp=CAU */}
+
+
+
+// </header>
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +18,6 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <div>
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
@@ -39,9 +47,6 @@ const Header = () => {
         </div>
       </div>
     </header>
-      <div id="heroImage">
-</div>
-  </div>
   );
 };
 
