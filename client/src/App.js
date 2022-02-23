@@ -15,6 +15,7 @@ import SingleThought from './pages/SingleThought';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TutorDemo from './pages/TutorDemo';
+import Video from './pages/Video';
 
 
 // Construct our main GraphQL API endpoint
@@ -59,6 +60,9 @@ function App() {
             </Route>
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
+            </Route>
+            <Route exact path="/video">
+              <Video />
             </Route>
           </div>
           <Footer />
