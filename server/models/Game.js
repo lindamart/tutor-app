@@ -15,6 +15,6 @@ const schema = new Schema({
   }
 });
 
-const Video = model('Video', schema);
+const Game = model('Game', schema);
 
-module.exports = Video;
+module.exports = Game;
