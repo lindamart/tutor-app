@@ -13,30 +13,51 @@ export default function TutorDemo() {
     }
     updateTutors()
   }, [])
+
+  // ADDED FOR VIDEOS CHECK IF CORRECT - USED ABOVE TEMPLATE
+  // const [videos, setVideos] = useState([])
+  // useEffect(() => {
+  //   const updateVideos = async () => {
+  //     const response = await fetch("/api/video")
+  //     const data = await response.json()
+  //     setVideos(data)
+  //   }
+  //   updateVideos()
+  // }, [])
     
-  return (
-    <div>
-      <select value={subject} onChange={(e) => {
-        console.log(e.target.value)
-        setSubject(e.target.value) }}>
-        <option value="none">Please select a Subject</option>
-        <option value="javascript">JavaScript</option>
-        <option value="css">CSS</option>
-        <option value="apis">APIs</option>
-        <option value="mern">MERN</option>
-        <option value="sql">SQL</option>
-        <option value="react">React</option>
-      </select>
-      <div className='tutorList'>
-        {tutors.filter((tutor) => {
-          return tutor.subject === subject
-        }).map((tutor) => {
-          return <TutorCard tutor={tutor}/>
+      // <div className='videoList'>
+      //   {videos.filter((video) => {
+      //     return video.subject === subject
+      //   }).map((video) => {
+      //     return <VideoCard video={video}/>
           
-        })}
-      </div>
+      //   })}
+      // </div>
       
-    </div>
     
+
+    return (
+      <div>
+        <select value={subject} onChange={(e) => {
+          console.log(e.target.value)
+          setSubject(e.target.value) }}>
+          <option value="none">Please select a Subject</option>
+          <option value="javascript">JavaScript</option>
+          <option value="css">CSS</option>
+          <option value="apis">APIs</option>
+          <option value="mern">MERN</option>
+          <option value="sql">SQL</option>
+          <option value="react">React</option>
+        </select>
+        <div className='tutorList'>
+          {tutors.filter((tutor) => {
+            return tutor.subject === subject
+          }).map((tutor) => {
+            return <TutorCard tutor={tutor}/>
+            
+          })}
+        </div>
+        
+      </div>
   )
 }
