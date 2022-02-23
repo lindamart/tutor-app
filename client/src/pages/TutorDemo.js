@@ -23,7 +23,7 @@ export default function TutorDemo() {
   //     setVideos(data)
   //   }
   //   updateVideos()
-  // }, [])
+  // }, [])************************************
     
       // <div className='videoList'>
       //   {videos.filter((video) => {
@@ -32,9 +32,27 @@ export default function TutorDemo() {
       //     return <VideoCard video={video}/>
           
       //   })}
-      // </div>
+      // </div>********************************
       
+  //     ADDED FOR GAMES CHECK IF CORRECT - USED ABOVE TEMPLATE
+  // const [games, setGames] = useState([])
+  // useEffect(() => {
+  //   const updateGames = async () => {
+  //     const response = await fetch("/api/game")
+  //     const data = await response.json()
+  //     setGames(data)
+  //   }
+  //   updateGames()
+  // }, [])*******************************
     
+  //     <div className='gameList'>
+  //       {games.filter((game) => {
+  //         return game.subject === subject
+  //       }).map((game) => {
+  //         return <GameCard game={game}/>
+          
+  //       })}
+  //     </div>
 
     return (
       <div>
