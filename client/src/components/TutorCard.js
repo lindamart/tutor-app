@@ -4,7 +4,7 @@ export default function TutorCard({ tutor }) {
   const firstName = tutor.name.split(" ")[0]
   const lastName = tutor.name.split(" ")[1]
   return (
-    <div className='tutorCard'>
+    <div className='tutor card'>
       <div className='cardHeader'>
         <div>{firstName}</div>
         <div>{lastName}</div>

@@ -1,14 +1,16 @@
-// import React from 'react'
+import React from 'react'
+import YouTubeVideo from './YouTubeVideo'
 
-// export default function VideoCard({ video }) {
-//   return (
-//     <div className='videoCard'>
-//       <div className='cardHeader'>
-//         <div>{video.title}</div>
-//       </div>
-//       <div className='cardBody'>{video.link}</div>
-//       <div className='cardFooter'>{video.subject}</div>
-//     </div>
-// ADDED CODE NEED CODE CHECK...CAN THERE BE A BUTTON FOR LINK
-//   )
-// }
+export default function VideoCard({ video }) {
+  return (
+    <div className='video card'>
+      <div className='cardHeader'>
+        <div>{video.title}</div>
+      </div>
+      <div className='cardBody'>
+        <YouTubeVideo link={video.link}/>
+      </div>
+      <div className='cardFooter'>{video.subject}</div>
+    </div>
+  )
+}
