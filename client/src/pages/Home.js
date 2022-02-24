@@ -14,8 +14,7 @@ const Home = () => {
     <main>
       <div className="marquee-outer">
       <div className="marquee-inner">
-        <p>Hi!</p>
-        <img src="//www.html.am/images/html-codes/marquees/fish-swimming.gif" width="94" height="88" alt="Swimming fish"/></div>
+        <img src="//https://blog.nsslha.org/wp-content/uploads/2019/06/Paporto_Tutoring-1060x707.jpg" width="94" height="88" alt="Tutoring session"/></div>
         </div>
         
         <div className="flex-row justify-center">

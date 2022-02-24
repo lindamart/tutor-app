@@ -1,0 +1,117 @@
+[
+  {
+    "title": "Learn JavaScript in 1 Hour",
+    "subject":"javascript",
+    "link":"https://www.youtube.com/embed/W6NZfCO5SIk"
+  },
+  {
+    "title": "JavaScript Basics in 10 Minutes",
+    "subject":"javascript",
+    "link":"https://www.youtube.com/embed/xwKbtUP87Dk"
+  },
+  {
+    "title": "Javascript Tutorial For Beginners",
+    "subject":"javascript",
+    "link":"https://www.youtube.com/embed/2nZiB1JItbY?list=PLDyQo7g0_nsX8_gZAB8KD1lL4j4halQBJ"
+  },
+  {
+    "title": "CSS Crash Course For Absolute Beginners",
+    "subject":"css",
+    "link":"https://www.youtube.com/embed/yfoY53QXEnI"
+  },
+  {
+    "title": "Learn CSS in 20 Minutes",
+    "subject":"css",
+    "link":"https://www.youtube.com/embed/1PnVor36_40"
+  },
+  {
+    "title": "Block, Inline, and Inline-Block explained | CSS Tutorial",
+    "subject":"css",
+    "link":"https://www.youtube.com/embed/x_i2gga-sYg"
+  },
+  {
+    "title": "APIs for Beginners - How to use an API",
+    "subject":"apis",
+    "link":"https://www.youtube.com/embed/GZvSYJDk-us"
+  },
+  {
+    "title": "What is an API and how does it work?",
+    "subject":"apis",
+    "link":"https://www.youtube.com/embed/Yzx7ihtCGBs"
+  },
+  {
+    "title": "REST API concepts and examples",
+    "subject":"apis",
+    "link":"https://www.youtube.com/embed/7YcW25PHnAA"
+  },
+  {
+    "title": "How To Work With Any API",
+    "subject":"apis",
+    "link":"https://www.youtube.com/embed/3nwcNLM3KOU"
+  },
+  {
+    "title": "Learn the MERN Stack - Full Tutorial",
+    "subject":"mern",
+    "link":"https://www.youtube.com/embed/7CqJlxBYj-M"
+  },
+  {
+    "title": "MERN Tutorial For Beginners",
+    "subject":"mern",
+    "link":"https://www.youtube.com/embed/I7EDAR2GRVo"
+  },
+  {
+    "title": "Learn The MERN Stack",
+    "subject":"mern",
+    "link":"https://www.youtube.com/embed/PBTYxXADG_k?list=PLillGF-RfqbbiTGgA77tGO426V3hRF9iE"
+  },
+  {
+    "title": "CRUD Tutorial Using MERN Stack - MongoDB, ReactJS, NodeJS [Part 1]",
+    "subject":"mern",
+    "link":"https://www.youtube.com/embed/wgGkF4k9c7A"
+  },
+  {
+    "title": "MySQL Tutorial for Beginners",
+    "subject":"sql",
+    "link":"https://www.youtube.com/embed/7S_tz1z_5bA"
+  },
+  {
+    "title": "Learn Basic SQL in 15 Minutes",
+    "subject":"sql",
+    "link":"https://www.youtube.com/embed/kbKty5ZVKMY"
+  },
+  {
+    "title": "Learn SQL In 60 Minutes",
+    "subject":"sql",
+    "link":"https://www.youtube.com/embed/p3qvj9hO_Bo"
+  },
+  {
+    "title": "What is SQL?",
+    "subject":"sql",
+    "link":"https://www.youtube.com/embed/27axs9dO7AE"
+  },
+  {
+    "title": "What is Database & SQL?",
+    "subject":"sql",
+    "link":"https://www.youtube.com/embed/FR4QIeZaPeM"
+  },
+  {
+    "title": "React JS Crash Course",
+    "subject":"react",
+    "link":"https://www.youtube.com/embed/w7ejDZ8SWv8"
+  },
+  {
+    "title": "React JS Course for Beginners",
+    "subject":"react",
+    "link":"https://www.youtube.com/embed/nTeuhbP7wdE"
+  },
+  {
+    "title": "Learn REACT JS in just 30 MINUTES",
+    "subject":"react",
+    "link":"https://www.youtube.com/embed/vIRBSI-elUM"
+  },
+  {
+    "title": "Java Full Course",
+    "subject":"javascript",
+    "link":"https://www.youtube.com/embed/Qgl81fPcLc8"
+  }
+]

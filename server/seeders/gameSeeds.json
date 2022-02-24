@@ -1,0 +1,57 @@
+[
+  {
+    "title": "CodinGame",
+    "subject":"javascript",
+    "link":"https://www.codingame.com/start"
+  },
+  {
+    "title": "CSS Diner",
+    "subject":"css",
+    "link":"https://flukeout.github.io/"
+  },
+  {
+    "title": "Flexbox Froggy",
+    "subject":"css",
+    "link":"http://flexboxfroggy.com/"
+  },
+  {
+    "title": "flexbox Defense",
+    "subject":"css",
+    "link":"http://www.flexboxdefense.com/"
+  },
+  {
+    "title": "Code Combat",
+    "subject":"javascript",
+    "link":"https://codecombat.com/"
+  },
+  {
+    "title": "Untrusted",
+    "subject":"javascript",
+    "link":"https://alexnisnevich.github.io/untrusted/"
+  },
+  {
+    "title": "CheckIO & Empire of Code",
+    "subject":"javascript",
+    "link":"https://checkio.org/"
+  },
+  {
+    "title": "Elevator Saga",
+    "subject":"javascript",
+    "link":"http://play.elevatorsaga.com/"
+  },
+  {
+    "title": "Code Wars",
+    "subject":"javascript",
+    "link":"https://www.codewars.com/"
+  },
+  {
+    "title": "knight lab",
+    "subject":"sql",
+    "link":"https://mystery.knightlab.com/"
+  },
+  {
+    "title": "SQL Island",
+    "subject":"sql",
+    "link":"https://sql-island.informatik.uni-kl.de/"
+  }
+]
