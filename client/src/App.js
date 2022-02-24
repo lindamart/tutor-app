@@ -7,11 +7,12 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import "./App.css"
 
 // import Home from './pages/Home';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
-import SingleThought from './pages/SingleThought';
+// import Signup from './pages/Signup';
+// import Login from './pages/Login';
+// import SingleThought from './pages/SingleThought';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TutorDemo from './pages/TutorDemo';
@@ -51,7 +52,7 @@ function App() {
             <Route exact path="/">
               <Intro />
             </Route>
-            <Route exact path="/login">
+            {/* <Route exact path="/login">
               <Login />
             </Route>
             <Route exact path="/signup">
@@ -59,7 +60,7 @@ function App() {
             </Route>
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
-            </Route>
+            </Route> */}
           </div>
           <Footer />
         </div>

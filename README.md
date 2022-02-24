@@ -6,8 +6,8 @@ Welcome to Triple T Academy where people of all ages and experince can find the 
 # Wire Frames
 ### Login & Signup Page
 ![](assets/loginSignup.jpg)
-### Landing Page
-![](assets/landingPage.jpg)
+### Home Page
+![](assets/homePage.jpg)
 ### Tutor & Video Page
 ![](assets/tutorVideoPages.jpg)
 ### Games Page
