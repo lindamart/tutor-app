@@ -15,6 +15,7 @@ import SingleThought from './pages/SingleThought';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TutorDemo from './pages/TutorDemo';
+import  Intro from './pages/intro/Intro';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -48,7 +49,7 @@ function App() {
           <Header />
           <div className="container">
             <Route exact path="/">
-              <TutorDemo />
+              <Intro />
             </Route>
             <Route exact path="/login">
               <Login />
