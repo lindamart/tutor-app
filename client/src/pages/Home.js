@@ -12,9 +12,6 @@ const Home = () => {
 
   return (
     <main>
-      <div className="marquee-outer">
-      <div className="marquee-inner">
-        <img src="//https://blog.nsslha.org/wp-content/uploads/2019/06/Paporto_Tutoring-1060x707.jpg" width="94" height="88" alt="Tutoring session"/></div>
         </div>
         
         <div className="flex-row justify-center">
