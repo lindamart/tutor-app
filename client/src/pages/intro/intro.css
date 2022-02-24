@@ -1,0 +1,30 @@
+.intro{
+    display: flex;
+    position:absolute;
+    /* top: 0;
+    left: 0;
+    right:0;
+    bottom: 0; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    height: calc(100vh - 70px);
+    /* top: 70px; */
+   /* width: 100vw; */
+}
+.header-waper{
+    position:relative ;
+    background: url(pngtree-winter-vacation-tutoring-class-winter-vacation-cram-school-tutoring-class-image_20768.jpeg) no-repeat;
+    background-size: cover ;
+    background-position: center;
+    height: 90vh;
+  
+  }
+.intro h1{
+  color: white;  
+    font-weight: bold;
+    font-size: 2rem;
+text-align: center;
+  }
