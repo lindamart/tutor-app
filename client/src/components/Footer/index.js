@@ -16,16 +16,16 @@ const Footer = () => {
           </button>
         )}
         <h4 className="text-light">
-          Made with{' '}
-          <span
+          Made {' '}
+          {/* <span
             className="emoji"
             role="img"
             aria-label="heart"
             aria-hidden="false"
           >
             ❤️
-          </span>{' '}
-          by the Triple T Academy.
+          </span>{' '} */}
+          by Triple T Academy
         
         </h4>
       </div>
