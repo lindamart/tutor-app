@@ -1,6 +1,6 @@
 const router = require("express").Router()
 const Tutor = require("../../models/Tutor")
-
+// Tutor
 router.get("/", async (req, res) => {
   const tutors = await Tutor.find({})
   res.json(tutors)

@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-
+// Game
 const schema = new Schema({
   title: {
     type: String,

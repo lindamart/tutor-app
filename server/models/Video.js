@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-
+//  Video
 const schema = new Schema({
   title: {
     type: String,

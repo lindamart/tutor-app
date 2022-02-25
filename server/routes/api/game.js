@@ -1,6 +1,6 @@
 const router = require("express").Router()
 const Game = require("../../models/Game")
-
+// Game
 router.get("/", async (req, res) => {
   const games = await Game.find({})
   res.json(games)

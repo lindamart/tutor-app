@@ -1,6 +1,7 @@
 import React from 'react'
 import YouTubeVideo from './YouTubeVideo'
 
+// Card Setup for Videos
 export default function VideoCard({ video }) {
   return (
     <div className='video card'>

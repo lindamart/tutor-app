@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Card Setup for Games
 export default function GameCard({ game }) {
   return (
     <div className='game card'>

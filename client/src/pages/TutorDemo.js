@@ -1,9 +1,10 @@
+// Imports
 import React, { useEffect, useState } from 'react'
 import TutorCard from '../components/TutorCard'
 import VideoCard from '../components/VideoCard'
 import GameCard from '../components/GameCard'
-// import Card from 'react-bootstrap/Card'
 
+// Tutor
 export default function TutorDemo() {
   const [subject, setSubject] = useState("none")
   const [resource, setResource] = useState("tutors")
@@ -17,7 +18,7 @@ export default function TutorDemo() {
     updateTutors()
   }, [])
 
-
+// Videos
   const [videos, setVideos] = useState([])
   useEffect(() => {
     const updateVideos = async () => {
@@ -30,7 +31,7 @@ export default function TutorDemo() {
 
 
 
-
+// Games
   const [games, setGames] = useState([])
   useEffect(() => {
     const updateGames = async () => {
@@ -42,7 +43,7 @@ export default function TutorDemo() {
   }, [])
 
 
-
+// Option Dropdown
   return (
     <div>
       <select value={subject} onChange={(e) => {
@@ -57,9 +58,12 @@ export default function TutorDemo() {
         <option value="sql">SQL</option>
         <option value="react">React</option>
       </select>
+      {/* Button Selection once tutors populated */}
       <button onClick={() => { setResource("tutors") }}>Tutors</button>
       <button onClick={() => { setResource("videos") }}>Videos</button>
       <button onClick={() => { setResource("games") }}>Games</button>
+      
+      {/* Tutor/Video/Games to card */}
       {resource === "tutors" && <div className='tutor list'>
         {tutors.filter((tutor) => {
           return tutor.subject === subject

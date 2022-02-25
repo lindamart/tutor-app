@@ -1,5 +1,5 @@
 import React from 'react'
-
+// Card Setup for tutors
 export default function TutorCard({ tutor }) {
   const firstName = tutor.name.split(" ")[0]
   const lastName = tutor.name.split(" ")[1]
