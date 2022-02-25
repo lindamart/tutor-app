@@ -1,6 +1,6 @@
 const router = require("express").Router()
 const Video = require("../../models/Video")
-
+// Video
 router.get("/", async (req, res) => {
   const videos = await Video.find({})
   res.json(videos)

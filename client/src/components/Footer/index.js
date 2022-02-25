@@ -13,7 +13,7 @@ const Footer = () => {
         >
           ❤️
         </span>{' '}
-        by the Tech Thoughts team.
+        by the Triple T Team.
       </span>
     </footer>
   );
