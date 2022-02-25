@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import "./App.css"
 
 // import Home from './pages/Home';
-// import Signup from './pages/Signup';
-// import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 // import SingleThought from './pages/SingleThought';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -55,15 +55,12 @@ function App() {
             <Route exact path="/resources">
               <TutorDemo/>
             </Route>
-            {/* <Route exact path="/login">
+            <Route exact path="/login">
               <Login />
             </Route>
             <Route exact path="/signup">
               <Signup />
             </Route>
-            <Route exact path="/thoughts/:thoughtId">
-              <SingleThought />
-            </Route> */}
           </div>
           <Footer />
         </div>
