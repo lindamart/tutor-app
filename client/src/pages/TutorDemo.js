@@ -3,56 +3,60 @@ import React, { useEffect, useState } from 'react'
 import TutorCard from '../components/TutorCard'
 import VideoCard from '../components/VideoCard'
 import GameCard from '../components/GameCard'
+import{QUERY_GAMES, QUERY_TUTORS, QUERY_VIDEOS} from "../utils/queries"
+import { useQuery } from '@apollo/client'
 
 // Tutor
 export default function TutorDemo() {
   const [subject, setSubject] = useState("none")
   const [resource, setResource] = useState("tutors")
-  const [tutors, setTutors] = useState([])
-  useEffect(() => {
-    const updateTutors = async () => {
-      const response = await fetch("/api/tutor")
-      const data = await response.json()
-      setTutors(data)
-    }
-    updateTutors()
-  }, [])
+  const {loading:tutorsLoading, data: {tutors}={}} = useQuery(QUERY_TUTORS)
+  const {loading:videosLoading, data: {videos}={}} = useQuery(QUERY_VIDEOS)
+  const {loading:gamesLoading, data: {games}={}} = useQuery(QUERY_GAMES)
+  // const [tutors, setTutors] = useState([])
+  // useEffect(() => {
+  //   const updateTutors = async () => {
+  //     const {data}=await fetchTutors()
+  //     setTutors(data)
+  //   }
+  //   updateTutors()
+  // }, [])
 
-  // Videos
-  const [videos, setVideos] = useState([])
-  useEffect(() => {
-    const updateVideos = async () => {
-      const response = await fetch("/api/video")
-      const data = await response.json()
-      setVideos(data)
-    }
-    updateVideos()
-  }, [])
+  // // Videos
+  // const [videos, setVideos] = useState([])
+  // useEffect(() => {
+  //   const updateVideos = async () => {
+  //     const response = await fetch("/api/video")
+  //     const data = await response.json()
+  //     setVideos(data)
+  //   }
+  //   updateVideos()
+  // }, [])
 
 
 
-  // Games
-  const [games, setGames] = useState([])
-  useEffect(() => {
-    const updateGames = async () => {
-      const response = await fetch("/api/game")
-      const data = await response.json()
-      setGames(data)
-    }
-    updateGames()
-  }, [])
-
-  const subjectTutors = tutors.filter((tutor) => {
+  // // Games
+  // const [games, setGames] = useState([])
+  // useEffect(() => {
+  //   const updateGames = async () => {
+  //     const response = await fetch("/api/game")
+  //     const data = await response.json()
+  //     setGames(data)
+  //   }
+  //   updateGames()
+  // }, [])
+console.log(tutors)
+  const subjectTutors = tutors?.filter((tutor) => {
     return tutor.subject === subject
-  })
+  })||[]
 
-  const subjectVideos = videos.filter((video) => {
+  const subjectVideos = videos?.filter((video) => {
     return video.subject === subject
-  })
+  })||[]
 
-  const subjectGames = games.filter((game) => {
+  const subjectGames = games?.filter((game) => {
     return game.subject === subject
-  })
+  })||[]
 
   useEffect(() => {
     const subjectResources = {

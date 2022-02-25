@@ -15,29 +15,36 @@ export const QUERY_USER = gql`
   }
 `;
 
-export const QUERY_THOUGHTS = gql`
-  query getThoughts {
-    thoughts {
+export const QUERY_TUTORS = gql`
+  query getTutors {
+    tutors {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
+      name
+      subject
+      description
     }
   }
 `;
 
-export const QUERY_SINGLE_THOUGHT = gql`
-  query getSingleThought($thoughtId: ID!) {
-    thought(thoughtId: $thoughtId) {
+export const QUERY_VIDEOS = gql`
+  query getVideos{
+    videos {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
-      comments {
-        _id
-        commentText
-        createdAt
-      }
+      name
+      subject
+      link
     }
   }
 `;
+
+export const QUERY_GAMES = gql`
+  query getGames {
+    games {
+      _id
+      name
+      subject
+      link
+    }
+  }
+`;
+
