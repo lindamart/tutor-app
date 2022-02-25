@@ -31,7 +31,7 @@ https://github.com/lindamart/tutor-app
 
 # Preview
 ## Deployed Application
-Screenshots here
+![](assets/appDemo.gif)
 
 ## Wire Frames
 ### Login & Signup Page
