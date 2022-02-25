@@ -18,7 +18,7 @@ export default function TutorDemo() {
     updateTutors()
   }, [])
 
-// Videos
+  // Videos
   const [videos, setVideos] = useState([])
   useEffect(() => {
     const updateVideos = async () => {
@@ -31,7 +31,7 @@ export default function TutorDemo() {
 
 
 
-// Games
+  // Games
   const [games, setGames] = useState([])
   useEffect(() => {
     const updateGames = async () => {
@@ -42,8 +42,30 @@ export default function TutorDemo() {
     updateGames()
   }, [])
 
+  const subjectTutors = tutors.filter((tutor) => {
+    return tutor.subject === subject
+  })
 
-// Option Dropdown
+  const subjectVideos = videos.filter((video) => {
+    return video.subject === subject
+  })
+
+  const subjectGames = games.filter((game) => {
+    return game.subject === subject
+  })
+
+  useEffect(() => {
+    const subjectResources = {
+      videos: subjectVideos,
+      tutors: subjectTutors,
+      games: subjectGames
+    }
+    if (subjectResources[resource].length === 0) {
+      setResource("tutors")
+    }
+  }, [resource, subjectVideos, subjectTutors, subjectGames])
+
+  // Option Dropdown
   return (
     <div>
       <select value={subject} onChange={(e) => {
@@ -59,29 +81,23 @@ export default function TutorDemo() {
         <option value="react">React</option>
       </select>
       {/* Button Selection once tutors populated */}
-      <button onClick={() => { setResource("tutors") }}>Tutors</button>
-      <button onClick={() => { setResource("videos") }}>Videos</button>
-      <button onClick={() => { setResource("games") }}>Games</button>
-      
+      {subjectTutors.length > 0 && <button onClick={() => { setResource("tutors") }}>Tutors</button>}
+      {subjectVideos.length > 0 && <button onClick={() => { setResource("videos") }}>Videos</button>}
+      {subjectGames.length > 0 && <button onClick={() => { setResource("games") }}>Games</button>}
+
       {/* Tutor/Video/Games to card */}
       {resource === "tutors" && <div className='tutor list'>
-        {tutors.filter((tutor) => {
-          return tutor.subject === subject
-        }).map((tutor) => {
+        {subjectTutors.map((tutor) => {
           return <TutorCard tutor={tutor} />
         })}
       </div>}
       {resource === "videos" && <div className='video list'>
-        {videos.filter((video) => {
-          return video.subject === subject
-        }).map((video) => {
+        {subjectVideos.map((video) => {
           return <VideoCard video={video} />
         })}
       </div>}
       {resource === "games" && <div className='game list'>
-        {games.filter((game) => {
-          return game.subject === subject
-        }).map((game) => {
+        {subjectGames.map((game) => {
           return <GameCard game={game} />
         })}
       </div>}
