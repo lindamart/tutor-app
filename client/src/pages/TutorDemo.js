@@ -60,9 +60,9 @@ export default function TutorDemo() {
       tutors: subjectTutors,
       games: subjectGames
     }
-if(subjectResources[resource].length === 0){
-  setResource("tutors")
-}
+    if (subjectResources[resource].length === 0) {
+      setResource("tutors")
+    }
   }, [resource, subjectVideos, subjectTutors, subjectGames])
 
   // Option Dropdown
